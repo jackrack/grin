@@ -38,6 +38,7 @@ If you decide to use a persistent storage (e.g. ```-v grin:/usr/src/grin```) you
 - ncurses and libs (ncurses, ncursesw5)
 - zlib libs (zlib1g-dev or zlib-devel)
 - linux-headers (reported needed on Alpine linux)
+- cmake (required on Ubuntu before you can run Rust)
 
 
 ## Build steps
@@ -82,10 +83,6 @@ export PATH=/path/to/grin/dir/target/debug:$PATH
 ```
 
 You can then run `grin` directly (try `grin help` for more options).
-
-*Important Note*: if you used Grin in testnet1, running the wallet listener
-manually isn't required anymore. Grin will create a seed file and run the
-listener automatically on start.
 
 # Configuration
 
